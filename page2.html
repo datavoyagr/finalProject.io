@@ -32,8 +32,8 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="page2.html">Books</a></li>
-                <li><a href="page3.html">Download</a></li>
-                <li><a href="page4.html">Sources</a></li>
+                <li><a href="page3.html">Page3</a></li>
+                <li><a href="page4.html">Page4</a></li>
             </ul>
         </nav>
     </header>
@@ -66,8 +66,8 @@
         <p>*Required values are marked with an asterik.</p>
 
         <form name="readerSurvey" id="survey"
-            action="hhttp://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php"
-            method="get">
+           
+            method="post">
             <fieldset id="readerInfo">
                 <legend>Reader Information</legend>
 
@@ -244,12 +244,12 @@
 
             <fieldset id="bottom">
                 <div id="buttons">
-                    <input type="submit" value="Submit My Info" />
+                    <input type="submit" onClick="f1()" value="Submit My Info" />
                     <input type="reset" value="Cancel" />
                 </div>
             </fieldset>
         </form>
-
+        
 
     </section>
 
@@ -262,8 +262,9 @@
         </footer>
     </div>
 
-    <script src="js/carousel.js"></script>
+    <script src="js/form.js"></script>
     <script src="js/modernizr-2.8.3.js" defer></script>
+
 
 </body>
 
