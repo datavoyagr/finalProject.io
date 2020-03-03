@@ -13,7 +13,7 @@ survey.onsubmit = function(event) {
 
   var request = new XMLHttpRequest();
   // POST to httpbin which returns the POST data as JSON
-  request.open('POST', 'http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php', /* async = */ false);
+  request.open('POST', 'https://httpbin.org/post', /* async = */ false);
 
   var formData = new FormData(document.getElementById('survey'));
   request.send(formData);
