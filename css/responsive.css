@@ -1,0 +1,16 @@
+/*CS 290 Web Development
+Project: Final Project
+Author: Nicole Miller
+Filename: mainStyle.css
+Date: 2/29/2020
+ */
+
+
+/*Flexible Styles*/
+
+body {
+	/*display: -webkit-flex;*/
+	display: flex;
+	/*-webkit-flex-flow: row wrap;*/
+	flex-flow: row wrap;
+}

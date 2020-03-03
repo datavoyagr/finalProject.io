@@ -1,0 +1,22 @@
+/*CS 290 Web Development
+Project: Final Project
+Author: https://www.w3schools.com/howto/howto_css_download_button.asp
+Filename: page3.css
+Date: 2/29/2020
+ */
+
+/* Style buttons */
+.btn {
+    background-color: DodgerBlue;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  /* Darker background on mouse-over */
+  .btn:hover {
+    background-color: RoyalBlue;
+  }
+

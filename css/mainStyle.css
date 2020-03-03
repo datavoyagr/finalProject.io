@@ -1,0 +1,287 @@
+@charset "utf-8";
+@font-face {
+	font-family: 'Cantarell-Regular';
+	src: url('fonts/Cantarell-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Cantarell-Oblique';
+	src: url('fonts/Cantarell-Oblique.ttr') format('trutype');
+	font-weight: italic;
+}
+
+@font-face {
+	font-family: 'Cantarell-Bold';
+	src: url('fonts/Cantarell-Bold.ttr') format('trutype');
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: 'Cantarell-BoldOblique';
+	src: url('fonts/Cantarell-BoldOblique.ttr') format('trutype');
+	font-weight: bold italic;
+}
+
+@font-face {
+	font-family: 'Sofia-Regular';
+	src: url('fonts/Sofia-Regular.otf') format('otf')
+}
+
+/*CS 290 Web Development
+Project: Final Project
+Author: Nicole Miller
+Filename: mainStyle.css
+Date: 2/29/2020
+ */
+
+/*Overall Document Styles*/
+
+html {
+	background-color: rgb(35, 89, 132);
+}
+
+/*Body Header*/
+
+body>header>nav.mainMenu li {
+	display: block;
+	float: left;
+	width: 25%;
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+nav.mainMenu li {
+	display: block;
+	float: left;
+	font-size: 1.5em;
+	line-height: 2em;
+	background-color: rgb(35, 89, 132);
+}
+
+nav.mainMenu>ul>li>a:link, nav.mainMenu>ul>li>a:visited {
+	text-decoration: none;
+	color: rgb(249, 249, 244);
+}
+
+nav.mainMenu>ul>li>a:hover, nav.mainMenu>ul>li>a:active {
+	color: rgb(128, 214, 175);
+}
+
+body>header>a {
+	margin-bottom: 1px;
+}
+
+body>header>a>img {
+	display: block;
+	width: 100%;
+}
+
+/*Page Body Styles*/
+
+body {
+	background-color: rgb(197, 216, 232);
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px;
+	max-width: 960px;
+	min-width: 640px;
+	width: 95%;
+	font-family: 'Catarell', Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 16px;
+	color: rgb(1, 32, 112);
+	border-left: 2px solid rgb(1, 32, 112);
+	border-right: 2px solid rgb(1, 32, 112);
+	box-shadow: rgb(78, 93, 132) 10px 0px 30px, rgb(78, 93, 132) -10px 0px 30px;
+}
+
+/*Slide Carousel Styles*/
+
+.mySlides {
+	display: none;
+	width: 100%;
+}
+
+.w3-content {
+	max-width: 100%;
+}
+
+.w3-container {
+	margin: auto;
+	float: right;
+	display: block;
+	width: 100%;
+	padding: 10px;
+	/* padding-bottom: 1em;
+    padding-left: .5em; */
+}
+
+/*article styles*/
+
+article {
+	display: block;
+	margin-left: 1.5em;
+	margin-right: 1em;
+}
+
+article p {
+	line-height: 1.5em;
+	margin-bottom: 1.5em;
+	margin-top: 1.5em;
+	/* padding-right: 1.5em;
+	padding-left: 1.5em; */
+}
+
+article img {
+	display: block;
+	float: left;
+	padding-right: 1em;
+}
+
+figure#theMap {
+	float: right;
+	display: block;
+	padding-bottom: 1em;
+	padding-left: 1em;
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+figure figcaption {
+	font-style: italic;
+	font-size: 1em;
+	text-align: center;
+}
+
+article p::first-letter {
+	font-weight: bold;
+	color: rgb(65, 150, 219);
+	float: left;
+	font-size: 3em;
+	line-height: 0.8;
+	font-family: 'Sofia', Georgia, serif;
+}
+
+article h1 {
+	font-size: 2.2em;
+	text-align: center;
+	font-weight: bold;
+	padding-top: 2em;
+	padding-bottom: 1em;
+	margin-bottom: 1em;
+	text-shadow: rgb(78, 93, 132) 4px 4px 40px;
+}
+
+article h2 {
+	font-size: 1.5em;
+	line-height: 2em;
+	font-weight: bold;
+}
+
+article h3 {
+	font-size: 1.5em;
+	line-height: 2em;
+	font-style: italic;
+}
+
+/*Right Column*/
+
+aside {
+	/* padding-top: 8em; */
+	padding-left: 2em;
+	line-height: 1.5em;
+	font-size: 1em;
+}
+
+.col-1-3 h2 {
+	font-size: 1.5em;
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
+	font-weight: bold;
+}
+
+nav#externalLinks>ul>li>a:link, nav#externalLinks>ul>li>a:visited {
+	text-decoration: none;
+	color: rgb(1, 32, 112);
+}
+
+nav#externalLinks>ul>li>a:hover, nav#externalLinks>ul>li>a:active {
+	text-decoration: none;
+	color: rgb(128, 214, 175);
+	background-color: rgb(35, 89, 132);
+}
+
+figure#listOf {
+	line-height: 1.5em;
+	margin: 0px auto;
+	padding-bottom: 1.5em;
+	width: 80%;
+	display: block;
+	border: 3px double rgb(35, 89, 132);
+	border-radius: 30px;
+}
+
+figure#listOf>h2 {
+	text-align: center;
+}
+
+figure#listOf>ol>li {
+	list-style-type: decimal;
+	list-style-position: inside;
+	line-height: 1em;
+	margin-bottom: 1em;
+	padding-right: 1.5em;
+	padding-left: 1.5em;
+}
+
+/*YouTube Video*/
+
+div.videoContainer {
+	position: relative;
+	overflow: hidden;
+	padding-bottom: 20%;
+}
+
+/*Footer Styles*/
+
+footer>address {
+	font-size: 1em;
+	text-align: center;
+}
+
+footer p {
+	font-size: .8em;
+	text-align: center;
+	font-style: italic;
+}
+
+/*Grid Styles*/
+
+div.row {
+	clear: both;
+}
+
+div.row::after {
+	clear: both;
+	content: " ";
+	display: table;
+}
+
+/*Grid Column Styles*/
+
+div[class^="col-"] {
+	float: left;
+}
+
+div.col-2-3 {
+	width: 66.67%;
+}
+
+div.col-1-3 {
+	float: left;
+	width: 33.33%;
+}
+
+aside {
+	width: inherit;
+}

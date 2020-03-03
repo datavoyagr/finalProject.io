@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+        CS 290 Web Development
+        Final Project
+        Main Page
+
+        Author: Nicole Miller
+        Date: February 29, 2020
+        Filename: index.html
+    -->
+    <meta charset="UTF-8" />
+    <meta name="author" content="Nicole Miller" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/reset.css" type="text/css" />
+    <link rel="stylesheet" href="css/responsive.css" type="text/css" />
+    <link rel="stylesheet" href="css/w3.css" type="text/css">
+    <link rel="stylesheet" href="css/mainStyle.css" type="text/css">
+
+    <title>Nicole Miller's Final Project</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"> <img src="images/projectLogo.png" alt="Nicole's final class project header" /> </a>
+
+        <nav class="mainMenu ">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="page2.html">Books</a></li>
+                <li><a href="page3.html">Page3</a></li>
+                <li><a href="page4.html">Page4</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="row">
+        <div class="w3-container">
+
+            <div class="w3-content">
+                <img class="mySlides" src="images/technology-785742_1920.jpg" alt="https://pixabay.com/">
+                <img class="mySlides" src="images/artificial-intelligence-3382507_1920.jpg" alt="https://pixabay.com/">
+                <img class="mySlides" src="images/network-3537401_1920.jpg" alt="https://pixabay.com/">
+            </div>
+
+            <div class="w3-center">
+                <div class="w3-section">
+                    <button class="w3-button w3-light-grey" onclick="plusDivs(-1)">❮ Prev</button>
+                    <button class="w3-button w3-light-grey" onclick="plusDivs(1)">Next ❯</button>
+                </div>
+                <button class="w3-button demo" onclick="currentDiv(1)">1</button>
+                <button class="w3-button demo" onclick="currentDiv(2)">2</button>
+                <button class="w3-button demo" onclick="currentDiv(3)">3</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-2-3">
+            <article>
+                <h1>Nicole Miller's Final Project</h1>
+                <h2>Subtitle</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam orci tellus, rhoncus a dictum eget,
+                    viverra nec sapien. Ut hendrerit est nec dui malesuada, et fringilla sem lacinia. Suspendisse a
+                    ullamcorper ante, nec rutrum diam. Suspendisse id lectus dictum, pellentesque mi eget, consectetur
+                    mauris. Pellentesque egestas massa venenatis elit aliquet rutrum. Orci varius natoque penatibus et
+                    magnis dis parturient montes, nascetur ridiculus mus. Nulla id dui orci. Nam porta malesuada nisl,
+                    vitae tincidunt neque volutpat non. In nec neque at libero mattis mattis. Phasellus gravida
+                    elementum odio nec sagittis. Nullam vitae sem nec ante mattis varius eu a risus. Vivamus faucibus
+                    non velit eget sagittis. Donec ac sem vitae lorem faucibus laoreet. Suspendisse potenti. Proin eu
+                    velit orci. Nunc libero lacus, facilisis sit amet arcu a, ultrices accumsan lorem.
+                </p>
+
+                <h2>Some of my favorite things</h2>
+
+                <p>Now, to fill the rest of this page with trivia about myself. I have many interests, four of them are
+                    highlighted in the image below. I like beer, cooking (and eating), running, and my native Puerto
+                    Rico. If you click
+                    on the different parts of the image below, you can find out more about those topics. Also, don't
+                    miss
+                    my my form page about <a href="page2.html">books.</a>
+                    Originally I was also going to put together a page about running, but I ran out of time.</p>
+
+                <figure id="theMap">
+                    <img src="images/IMG_0078.jpg" alt="Nicole" title="These are a few of my favorite things"
+                        usemap="#nicole_map" />
+                    <figcaption>Click on any of the images above <br> for more information</figcaption>
+                </figure>
+                <map name="nicole_map">
+                    <area shape="rect" coords="11,11,292,291" href="http://thedaytonbeerco.com/" alt="beer" />
+                    <area shape="rect" coords="310,9,591,293" href="http://www.foodnetwork.com/recipes" alt="cooking" />
+                    <area shape="rect" coords="10,306,296,589" href="https://www.runnersworld.com/" alt="running" />
+                    <area shape="rect" coords="307,303,589,590" href="https://en.wikipedia.org/wiki/Puerto_Rico"
+                        alt="Puerto Rico" />
+                </map>
+
+
+                <h2>Subtitle 3</h2>
+                <p>
+                    Sed viverra vel mi vel tempus. Nunc vestibulum vulputate ex scelerisque mattis. Aliquam iaculis
+                    lacus augue, et convallis turpis interdum tincidunt. Maecenas maximus nec enim et vestibulum.
+                    Vestibulum gravida ex a eleifend placerat. Maecenas malesuada nulla eros, vel suscipit nibh faucibus
+                    vitae. Cras ut leo quis velit interdum consectetur. Donec id nisl fermentum, pulvinar lorem sed,
+                    efficitur odio. Fusce dui arcu, commodo nec nisi eget, laoreet hendrerit tellus.
+                </p>
+
+                <div class="videoContainer">
+                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/PkZNo7MFNFg"
+                        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </article>
+        </div>
+
+        <div class="col-1-3">
+            <h2 class="right-column">And then there's Running</h2>
+            <p>
+                Even though I said that I ran out of time to write about running, I will fit a few things in here.
+                I run for fun. Don't you laugh. Many people have told me that the words running and fun don't go
+                together; however, I find it relaxing. Running clears my mind. I've solved some pretty complex
+                problems while running. I've also "written" complete novels while running, but those will remain
+                unpublished.
+
+                <p>I've run a lot of marathons. Below is a list of the marathons I've run. Some of them, like
+                    the Flying Pig Marathon, I've run multiple times.</p>
+
+                <figure id="listOf">
+
+                    <h2>Marathons</h2>
+                    <ol>
+                        <li>Flying Pig Marathon</li>
+                        <li>Columbus Marathon</li>
+                        <li>Air Force Marathon</li>
+                        <li>Marine Corps Marathon</li>
+                        <li><a href="http://orrrc.org/event/another-dam-50k/">Another Dam 50K</a></li>
+                        <li>Chicago Marathon</li>
+                    </ol>
+                </figure>
+                <nav id="externalLinks">
+                    <h2>Websites to Check Out</h2>
+                    <ul>
+                        <li> <a href="https://www.runnersworld.com/">Runner's World</a></li>
+                        <li><a href="https://www.verywell.com/intermediate-marathon-training-schedule-2911393">Marathon
+                                Training Schedule </a></li>
+                        <li> <a href="http://www.quickanddirtytips.com/grammar-girl">Grammar Girl</a></li>
+                        <li> <a href="http://www.artic.edu/aic/collections/artwork/222002">An Elegant Woman at the
+                                Élysée Montmartre</a></li>
+                        <li> <a href="http://www.warpedwing.com/homepage">Warped Wing Brewery </a></li>
+                        <li><a href="http://www.foodnetwork.com/recipes">Food Network Recipes</a></li>
+                        <li><a href="http://allrecipes.com/">All Recipes</a></li>
+                    </ul>
+                </nav>
+
+                </article>
+        </div>
+    </div>
+
+
+    <div class="row row-3">
+        <footer>
+            <address>Nicole Miller's Class Project &#10031; 123 Example Lane &#10031; Dayton OH 45400 &#10031;
+                <a href="mailto:nicoleproject@email.com">nicoleproject@email.com</a> &#10031; 937-867-5309</address>
+            <hr />
+            <p><i id="copyright"> &#64; 2020 Nicole Miller </i></p>
+        </footer>
+    </div>
+
+    <script src="js/carousel.js"></script>
+    <script src="js/modernizr-2.8.3.js" defer></script>
+</body>
+
+</html>
