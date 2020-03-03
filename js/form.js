@@ -8,7 +8,7 @@
 
 
 var survey = document.getElementById('survey');
-survey.onsubmit = function f1(event) {
+survey.onsubmit = function(event) {
   event.preventDefault();
 
   var request = new XMLHttpRequest();
