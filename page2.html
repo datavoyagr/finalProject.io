@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--
+        CS 290 Web Development
+        Final Project
+        Page 2
+
+        Author: Nicole Miller
+        Date: February 29, 2020
+        Filename: page2.html
+    -->
+    <meta charset="UTF-8" />
+    <meta name="author" content="Nicole Miller" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/reset.css" type="text/css" />
+    <link rel="stylesheet" href="css/responsive.css" type="text/css" />
+    <link rel="stylesheet" href="css/w3.css" type="text/css">
+    <link rel="stylesheet" href="css/mainStyle.css" type="text/css">
+    <link rel="stylesheet" href="css/form.css" type="text/css" />
+
+    <title>Reader Book Survey</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"> <img src="images/projectLogo.png" alt="Nicole's final class project header" /> </a>
+
+        <nav class="mainMenu ">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="page2.html">Books</a></li>
+                <li><a href="page3.html">Page3</a></li>
+                <li><a href="page4.html">Page4</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="theForm">
+
+        <h1>Reader Survey</h1>
+
+        <figure id="many_books">
+            <img src="images/books.jpg" alt="books" title="Some Books">
+        </figure>
+
+        <p>One of my favorite activities to do when I'm not working on my class website is to read. In order to keep
+            track of the books
+            that I've read, I keep track of them with <a href="https://www.goodreads.com/">Goodreads.</a> With
+            Goodreads, I can
+            keep track of the titles of the books I've read, what I thought of it, and how many I've read.</p>
+
+        <p>Now that I go to school and work full-time, I don't have as much time as I would like to read books. That is,
+            unless you count non-fiction books, such as my textbooks.</p>
+
+        <p>My favorite genres are: literary fiction, dystopia, science fiction, and thrillers. My least favorites are
+            romance and political books.</p>
+
+        <p>I thought it would be interesting to take a survey of readers to find out more about their reading
+            preferences. By responding,
+            you will be entered into a contest to receive a free library card. Ha ha! What did you expect? I'm a college
+            student.
+            I don't have any money to spend on incentives.</p>
+
+        <p>*Required values are marked with an asterik.</p>
+
+        <form name="readerSurvey" id="survey"
+           
+            method="post">
+            <fieldset id="readerInfo">
+                <legend>Reader Information</legend>
+
+                <div class="formSect">
+                    <label>
+                        First Name*
+                        <input name="firstName" id="first" type="text" required autofocus />
+                    </label>
+                </div>
+
+                <div class="formSect">
+                    <label>
+                        Last Name*
+                        <input name="lastName" id="last" type="text" required />
+                    </label>
+                </div>
+
+                <div class="formSect">
+                    <label>
+                        Street
+                        <input name="streetAddress" id="street" type="text" />
+                    </label>
+                </div>
+
+                <div class="formSect">
+                    <label>
+                        City
+                        <input name="readCity" id="city" type="text" />
+                    </label>
+                </div>
+
+                <div class="formSect">
+                    <label>
+                        State
+                        <input name="readState" id="state" type="text" value="OH" />
+                    </label>
+                </div>
+
+                <div class="formSect">
+                    <label>
+                        Zip Code
+                        <input name="zipCode" id="code" type="text" pattern="^\d{5}$" maxlength="5"
+                            placeholder="nnnnn" />
+                    </label>
+                </div>
+
+                <div class="formSect">
+                    <label>
+                        Phone Number
+                        <input name="phoneNum" id="phone" type="tel" pattern="^\d{10}$|^(\9\d{3}\)\s*)?\d{3}[\s-]?d{4}$"
+                            maxlength="14" placeholder="(nnn) nnn-nnnn" />
+                    </label>
+                </div>
+
+                <div class="formSect">
+                    <label>
+                        e-mail*
+                        <input name="readMail" id="mail" type="email" required />
+                    </label>
+                </div>
+
+                <div>
+                    <input name="source" value="cs290" type="hidden" />
+                </div>
+
+                <div class="formSect">
+                    <input name="library" id="getCard" value="yes" type="checkbox" />
+                    <label for="getCard">Enter me for a chance to get a free library card!</label>
+                </div>
+            </fieldset>
+
+
+
+            <fieldset id="bookInfo">
+                <legend>About your book preferences</legend>
+
+                <div class="formSect">
+                    <label for="genre">What book genres do you prefer?</label>
+                    <select name="bookGengre" id="genre" size="7" multiple>
+                        <option value="genre1">Adult Fiction</option>
+                        <option value="genre2">Christian</option>
+                        <option value="genre3">Classics</option>
+                        <option value="genre4">Dystopian</option>
+                        <option value="genre5">Crime/Mystery</option>
+                        <option value="genre6">Fantasy</option>
+                        <option value="genre7">Historical Fiction</option>
+                        <option value="genre8">Literay Fiction</option>
+                        <option value="genre9">Memoir</option>
+                        <option value="genre10">Non Fiction</option>
+                        <option value="genre11">Politics</option>
+                        <option value="genre12">Religion/Spirituality</option>
+                        <option value="genre13"> Science Fiction</option>
+                        <option value="genre14">Suspense/Thriller</option>
+                    </select>
+                </div>
+
+                <div class="formSect">
+                    <label>
+                        What is your favorite book?
+                        <input name="favBook" id="favorite" type="text" />
+                    </label>
+                </div>
+
+                <div class="formSect">
+                    <label>Do you read e-books?</label>
+                    <fieldset class="optGroup">
+                        <label for="eYes">Yes</label>
+                        <input name="ebook" id="eYes" value="yes" type="radio" />
+                        <label for="eNo">No</label>
+                        <input name="ebook" id="eNo" value="no" type="radio" />
+                    </fieldset>
+                </div>
+
+                <div class="formSect">
+                    <label>Do you listen to audio books?</label>
+                    <fieldset class="optGroup">
+                        <label for="aYes">Yes</label>
+                        <input name="audBook" id="aYes" value="yes" type="radio" />
+                        <label for="aNo">No</label>
+                        <input name="audBook" id="aNo" value="no" type="radio" />
+                    </fieldset>
+                </div>
+
+                <div class="optGroup">
+                    <label>Do you enjoy movies based on books?</label>
+                    <fieldset class="buttons">
+                        <label for="mYes">Yes</label>
+                        <input name="movie" id="mYes" value="yes" type="radio" />
+                        <label for="mNo">No</label>
+                        <input name="movie" id="mNo" value="no" type="radio" />
+                    </fieldset>
+                </div>
+
+            </fieldset>
+
+
+            <fieldset id="purchaseInfo">
+                <legend>About your purchase preferences</legend>
+
+                <div class="formSect">
+                    <label>Do you buy books?</label>
+                    <fieldset class="optGroup">
+                        <label for="buyYes">Yes</label>
+                        <input name="buyBook" id="buyYes" value="yes" type="radio" />
+                        <label for="buyNo">No</label>
+                        <input name="buyBook" id="buyNo" value="no" type="radio" />
+                    </fieldset>
+                </div>
+
+                <div class="formSect">
+                    <label for="where">From where do you buy books?</label>
+                    <select name="whereBuy" id="where" size="5" multiple>
+                        <option value="where1">Local Independent Bookseller</option>
+                        <option value="where2">Used Books Store</option>
+                        <option value="where3">Amazon.com</option>
+                        <option value="where4">Barnes and Noble</option>
+                        <option value="where5">Books A Million</option>
+                        <option value="where6">Target</option>
+                        <option value="where7">Walmart</option>
+                        <option value="where8">Paperback Swap</option>
+                        <option value="where9">Book of the Month</option>
+                        <option value="genre10">Other</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <fieldset id="libraryInfo">
+                <legend>Additional Information</legend>
+
+                <label for="comments">What is your favorite book memory?</label>
+                <textarea name="favExp" id="comments"> </textarea>
+
+            </fieldset>
+
+            <fieldset id="bottom">
+                <div id="buttons">
+                    <input type="submit" onClick="f1()" value="Submit My Info" />
+                    <input type="reset" value="Cancel" />
+                </div>
+            </fieldset>
+        </form>
+        
+
+    </section>
+
+    <div class="row row-3">
+        <footer>
+            <address>Nicole Miller's Class Project &#10031; 123 Example Lane &#10031; Dayton OH 45400 &#10031;
+                <a href="mailto:nicoleproject@email.com">nicoleproject@email.com</a> &#10031; 937-867-5309</address>
+            <hr />
+            <p><i id="copyright"> &#64; 2020 Nicole Miller </i></p>
+        </footer>
+    </div>
+
+    <script src="js/form.js"></script>
+    <script src="js/modernizr-2.8.3.js" defer></script>
+
+
+</body>
+
+</html>
